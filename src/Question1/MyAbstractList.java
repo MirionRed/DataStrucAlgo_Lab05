@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Administrator
- */
+package Question1;
 public abstract class MyAbstractList<E> implements MyList<E>{
     protected int size = 0;
     
@@ -72,7 +63,8 @@ public abstract class MyAbstractList<E> implements MyList<E>{
         int currentSize = size;
         for(int i = 0; i < size(); i++){
             if(!otherList.contains(get(i))){
-                remove(i);
+                remove(i); 
+                i--; //remove this to get mind = blown 
             }
         }
         if(currentSize != size)
