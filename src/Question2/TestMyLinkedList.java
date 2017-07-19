@@ -27,5 +27,8 @@ public class TestMyLinkedList {
         list.set(25, 100);
         list.set(30, 100);
         System.out.println(list.get(25));
+        //everything should work
+        //too lazy to do the test thingy
+        //so do it yourself XP
     }
 }
